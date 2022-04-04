@@ -18,7 +18,8 @@ https://user-images.githubusercontent.com/92356291/161639046-955bbb14-967b-4398-
 - Run the project with `docker-compose up`
 
 ## What is this project aims to?
-Picture of Project 
+![WhatsApp Image 2022-04-05 at 00 59 44](https://user-images.githubusercontent.com/92356291/161639307-5649195f-c5c4-46bc-a25f-50aca9bc54e8.jpeg)
+
 * Program A generates a number between 0 and 9 and adds it to the NuerStoreA queue.
 * Program B also expects data from the NumberScoreB queue
 * If data comes from the queue, it makes 5 number predictions and if one of the prediction is correct, it gets 1 point to PointStore queue.

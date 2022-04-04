@@ -1,5 +1,11 @@
 cd # The Number Prediction Game with Golang and RabbitMQ
 
+
+https://user-images.githubusercontent.com/92356291/161639046-955bbb14-967b-4398-99be-79c9c5ca525c.mp4
+
+
+
+
 ## Dependencies used in the project
 
 - Go 1.17.3
@@ -12,7 +18,8 @@ cd # The Number Prediction Game with Golang and RabbitMQ
 - Run the project with `docker-compose up`
 
 ## What is this project aims to?
-Picture of Project 
+![WhatsApp Image 2022-04-05 at 00 59 44](https://user-images.githubusercontent.com/92356291/161639307-5649195f-c5c4-46bc-a25f-50aca9bc54e8.jpeg)
+
 * Program A generates a number between 0 and 9 and adds it to the NuerStoreA queue.
 * Program B also expects data from the NumberScoreB queue
 * If data comes from the queue, it makes 5 number predictions and if one of the prediction is correct, it gets 1 point to PointStore queue.
@@ -24,7 +31,7 @@ Picture of Project
 
 ## The Structure of Code 
 
-    -image of structure
+![image](https://user-images.githubusercontent.com/92356291/161639401-b4f65b12-3418-4eb4-b265-cc602daee69e.png)
 * Each of the Program have a Docker Image
 * There is a docker-compose.yml for the whole docker image work together. 
 * ProgramA and ProgramB have a Publisher Function and Consumer Function. 

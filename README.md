@@ -31,7 +31,7 @@ https://user-images.githubusercontent.com/92356291/161639046-955bbb14-967b-4398-
 
 ## The Structure of Code 
 
-    -image of structure
+    ![image](https://user-images.githubusercontent.com/92356291/161639401-b4f65b12-3418-4eb4-b265-cc602daee69e.png)
 * Each of the Program have a Docker Image
 * There is a docker-compose.yml for the whole docker image work together. 
 * ProgramA and ProgramB have a Publisher Function and Consumer Function. 

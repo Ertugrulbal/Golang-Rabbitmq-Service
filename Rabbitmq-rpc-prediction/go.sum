@@ -1,0 +1,4 @@
+github.com/rabbitmq/amqp091-go v1.3.2 h1:zezKg1S58+q/9Ej7DIqFL6TP6NGMyGPb4ykEm4n94cY=
+github.com/rabbitmq/amqp091-go v1.3.2/go.mod h1:ogQDLSOACsLPsIq0NpbtiifNZi2YOz0VTJ0kHRghqbM=
+github.com/streadway/amqp v1.0.0 h1:kuuDrUJFZL1QYL9hUNuCxNObNzB0bV/ZG5jV3RWAQgo=
+github.com/streadway/amqp v1.0.0/go.mod h1:AZpEONHx3DKn8O/DFsRAY58/XVQiIPMTMB1SddzLXVw=

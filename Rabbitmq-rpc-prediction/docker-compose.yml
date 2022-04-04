@@ -1,0 +1,42 @@
+version: '3.1'
+
+services:
+
+  rabbitmq:
+      container_name: 'my-message-queue'
+      image: rabbitmq:3-management-alpine
+      ports:
+        - 5672:5672
+        - 15672:15672
+      restart:
+        on-failure
+      networks:
+        - my_network
+
+  my_service_a:
+    container_name: 'my-service-A'
+    build:
+      context: .
+      dockerfile: ./programA/Dockerfile
+    depends_on:
+      - rabbitmq
+    networks:
+      - my_network
+    restart:
+      on-failure
+      
+  my_service_b:
+    container_name: 'my-service-B'
+    build:
+      context: .
+      dockerfile: ./programB/Dockerfile
+    depends_on:
+      - rabbitmq
+    networks:
+      - my_network
+    restart:
+      on-failure
+      
+networks:
+  my_network:
+    name: my_network

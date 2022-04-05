@@ -18,7 +18,7 @@ https://user-images.githubusercontent.com/92356291/161639046-955bbb14-967b-4398-
 - Run the project with `docker-compose up`
 
 ## What is this project aims to?
-![image](https://user-images.githubusercontent.com/92356291/161712942-fbcff310-5095-4d21-91ad-e338c8b7741e.png)
+![image](https://user-images.githubusercontent.com/92356291/161713682-4f3b3ac3-d581-4007-83d1-6321d6c98c34.png)
 
 * Program A generates a number between 0 and 9 and adds it to the NuerStoreA queue.
 * Program B also expects data from the NumberScoreB queue

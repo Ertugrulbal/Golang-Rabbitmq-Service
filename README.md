@@ -21,7 +21,7 @@ https://user-images.githubusercontent.com/92356291/161639046-955bbb14-967b-4398-
 ![image](https://user-images.githubusercontent.com/92356291/161713615-1afb6712-65ad-46cd-9e0d-a8dbc03a2ec2.png)
 
 * Program A generates a number between 0 and 9 and adds it to the NuerStoreA queue.
-* Program B also expects data from the NumberScoreB queue
+* Program B also expects data from the NumberStoreB queue
 * If data comes from the queue, it makes 5 number predictions and if one of the prediction is correct, it gets 1 point to PointStore queue.
 * This process will continue continuously for both programs.
 

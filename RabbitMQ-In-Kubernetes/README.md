@@ -1,15 +1,20 @@
-cd # The Number Prediction Game with Golang and RabbitMQ
+cd # The Number Prediction Game with Golang and RabbitMQ- (Run in Kuberetes)
 
 ## Dependencies used in the project
 
 - Go 1.17.3
 - RabbitMQ 3.9.14
 - Docker 20.10.4
+- DevSpace 5.18.4
+- Kubernetes-Kompose 1.26.1
 
 ## Project Setup
 - Clone the project with `git clone https://github.com/Ertugrulbal/Number_Prediction_Game_With_Golang_RabbitMQ.git`
+- cd `RabbitMQ-In-Kubernetes`
+- 
 ## Run 
-- Run the project with `docker-compose up`
+- The test for application with `docker-compose up`
+- kubectl apply -f rabbitmq, my-service-a, my-service-b
 
 ## What is this project aims to?
 Picture of Project 

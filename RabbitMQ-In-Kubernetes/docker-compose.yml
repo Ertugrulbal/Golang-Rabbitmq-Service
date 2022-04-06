@@ -1,0 +1,49 @@
+version: '3.1'
+
+services:
+
+  rabbitmq:
+      container_name: 'my-message-queue'
+      labels:
+        kompose.service.type: LoadBalancer
+      image: 'ertugrulbal/rabbitmq'
+      ports:
+        - 5672:5672
+        - 15672:15672
+      restart:
+        on-failure
+ 
+
+  my_service_a:
+    container_name: 'my-service-A'
+    labels:
+      kompose.service.type: LoadBalancer
+    build:
+      context: .
+      dockerfile: ./programA/Dockerfile
+    image: 'ertugrulbal/my-service-a'
+    depends_on:
+      - rabbitmq
+    ports: 
+      - 3000:5672
+      - 3003:15672
+    restart:
+      on-failure
+      
+  my_service_b:
+    container_name: 'my-service-B'
+    labels:
+      kompose.service.type: LoadBalancer
+    build:
+      context: .
+      dockerfile: ./programB/Dockerfile
+    image: 'ertugrulbal/my-service-b'
+    depends_on:
+      - rabbitmq
+    ports:
+      - 3001:5672
+      - 3002:15672
+
+    restart:
+      on-failure
+  
